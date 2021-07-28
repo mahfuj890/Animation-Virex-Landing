@@ -1815,7 +1815,7 @@ data-scroll="" data-scroll-speed="-6" data-scroll-direction="horizontal"
 
 .showcase_wrapper {
   padding: 8rem 0;
-  background-color: $blue_color;
+  background-color: $yellow_color_ecd;
 
   @include mediaMaxWidth(991px) {
 
@@ -1826,8 +1826,9 @@ data-scroll="" data-scroll-speed="-6" data-scroll-direction="horizontal"
 
   .showcase_content_ara {
     position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
     width: 100%;
     h2{
       color: $white_color;
@@ -1845,14 +1846,10 @@ data-scroll="" data-scroll-speed="-6" data-scroll-direction="horizontal"
   position: relative;
   margin-top: 12rem;
   img{
-    width: 40rem;
+    width: 50rem;
     height: 65rem;
-    border-radius: 2rem;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
-    object-fit: cover;
+
+
     @include mediaMaxWidth(991px){
       height: 50rem;
     }

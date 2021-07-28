@@ -1734,7 +1734,7 @@ data-scroll="" data-scroll-speed="-6" data-scroll-direction="horizontal"
 /* ============= Showcase Section  ============= */
 .showcase_wrapper {
   padding: 8rem 0;
-  background-color: #567DF4;
+  background-color: #ECD892;
 }
 
 @media (max-width: 991px) {
@@ -1745,9 +1745,10 @@ data-scroll="" data-scroll-speed="-6" data-scroll-direction="horizontal"
 
 .showcase_wrapper .showcase_content_ara {
   position: absolute;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
 }
 
@@ -1764,15 +1765,8 @@ data-scroll="" data-scroll-speed="-6" data-scroll-direction="horizontal"
 }
 
 .showcase_wrapper .showcase_img img {
-  width: 40rem;
+  width: 50rem;
   height: 65rem;
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @media (max-width: 991px) {
