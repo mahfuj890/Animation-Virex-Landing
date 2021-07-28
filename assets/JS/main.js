@@ -74,9 +74,19 @@ var swiper = new Swiper('.swiper-container2', {
 });
 
 // AOS On Page Scroll JS
-$(function() {
-  AOS.init({
-    duration: 1100,
-    offest: 50,
-  });
-});
+// $(function() {
+//   AOS.init({
+//     duration: 1100,
+//     offest: 50,
+//   });
+// });
+
+     // Locomotive Animation
+     const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true,
+      repeat:true,
+
+    });
+
+

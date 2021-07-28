@@ -11,6 +11,7 @@
   <link rel="shortcut icon" href="assets/Images/fiv_icon.png" type="image/x-icon">
   <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -25,17 +26,20 @@
   <!-- Swiper JS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- AOS On Page Scroll CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+  <!-- Locomotive CSS -->
+  <link rel="stylesheet" href="assets/CSS/locomotive-scroll.min.css">
 
 </head>
 
 <body>
+  <div data-scroll-container>
 
   <section class="navbar_hero_wrapper">
 
 
     <!-- ============= Navbar ============= -->
-    <section class="navbar_wrapper  ">
+    <section class="navbar_wrapper  " data-scroll-section>
 
 
 
@@ -126,17 +130,19 @@
 
 
     </section>
+
     <!-- ============= Hero Section ============= -->
-    <section class="hero_wrapper">
+    <section class="hero_wrapper" data-scroll-section>
       <div class="container hero_container">
         <div class="row">
           <div class="col-lg-6 hero_content_col">
             <div class="hero_content_area">
-              <h5 data-aos="zoom-in">Creative App Of 2020</h5>
-              <h1 data-aos="fade-right">Best Mobile App For Your Storage Management</h1>
-              <p data-aos="zoom-in-left">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+              <h5  data-scroll  data-scroll-speed="6" data-scroll-direction="horizontal" data-scroll-position="left" >  Creative App Of 2020</h5>
+                <h1  data-scroll  data-scroll-speed="6" data-scroll-direction="horizontal" > Best Mobile App    <span> <h1  data-scroll data-scroll-speed="2" data-scroll-direction="horizontal"  data-scroll-delay=1 data-scroll-position="left">For Your Storage Management</h1> </span> </h1>
+
+              <p  data-scroll  data-scroll-speed="-6" data-scroll-direction="horizontal"   >This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
                 aliquet.</p>
-              <div class="hero_button_area" data-aos="fade-right">
+              <div class="hero_button_area" data-scroll  data-scroll-speed="-4" data-scroll-direction="horizontal"  data-scroll-delay=1   >
 
 
                 <a class=" " href="#"><button type="button" class="btn ">Try Free Trial</button></a>
@@ -144,25 +150,28 @@
 
               </div>
               <div class="top_hero_shape">
-                <img src="assets/Images/Top_middile Rounded Rectangle 5.png" alt="">
+                <img src="assets/Images/Top_middile Rounded Rectangle 5.png" alt="" >
               </div>
             </div>
 
           </div>
           <div class="col-lg-6 hero_col_area">
             <div class="hero_img_area">
-              <img data-aos="fade-up" src="assets/Images/Screen-03.png" alt="">
-              <img data-aos="fade-left" src="assets/Images/Screen-02.png" alt="">
+              <img   src="assets/Images/Screen-03.png" alt="" data-scroll  data-scroll-speed="-6" data-scroll-direction="horizontal"
+              data-scroll-position="left">
+              <img   src="assets/Images/Screen-02.png" alt=""   >
 
             </div>
-            <div class="hero_bottom_shape">
+            <div class="hero_bottom_shape" data-scroll  data-scroll-speed="-4" data-scroll-direction="horizontal"
+            data-scroll-position="left" data-scroll-delay=1>
               <img src="assets/Images/bottom_middle_polygon.png" alt="">
             </div>
           </div>
 
         </div>
       </div>
-      <div class="left_shapes">
+      <div class="left_shapes" data-scroll data-scroll-speed="6" data-scroll-direction="horizontal"
+      data-scroll-position="left">
         <img src="assets/Images/left_circle_and dot.png" alt="">
       </div>
       <div class="right_shapes">
@@ -172,7 +181,7 @@
 
   </section>
   <!-- ============= Archive Section ============= -->
-  <section class="archive_section">
+  <section class="archive_section" data-scroll-section>
     <div class="container">
       <div class="row">
         <div class="col-lg-3  col-md-3 col-sm-6 ">
@@ -224,17 +233,18 @@
     </div>
   </section>
 
+
   <!-- ============= Home Step Section ============= -->
-  <section class="step_section">
+  <section class="step_section" data-scroll-section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
           <div class="easy_step_tile_area">
             <p>easy steps</p>
-            <h1>Discover This app More Easy
+            <h1 data-scroll-class="opacity_text_active" data-scroll  data-scroll-speed="1"  class="opacity_text"    >Discover This app More Easy
 
             </h1>
-            <h5>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel <br> velit auctor aliquet. Aenean
+            <h5  data-scroll-class="opacity_text_active" data-scroll  data-scroll-speed="2"  class="opacity_text" data-scroll-delay=1  >This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel <br> velit auctor aliquet. Aenean
               sollicitudin, lorem quis.</h5>
 
           </div>
@@ -242,12 +252,13 @@
       </div>
 
       <div class="row" style='margin-top:1rem'>
-        <div class="col-lg-6">
+        <div class="col-lg-6 ">
           <div class="easy_step_screen_area">
             <div class="circle_area">
 
 
-              <div class="top_circle" data-aos="fade-right" data-aos-offset="50" data-aos-delay="500">
+              <div class="top_circle" data-scroll  data-scroll-speed="-6" data-scroll-direction="horizontal"
+               >
 
 
               </div>
@@ -255,16 +266,16 @@
             </div>
 
             <div class="screen_img">
-              <img src="assets/Images/Discover-02.png" alt="" data-aos="fade-right">
+              <img src="assets/Images/Discover-02.png" alt=""  >
             </div>
 
           </div>
 
         </div>
-        <div class="col-lg-6 screen_wrapper">
+        <div class="col-lg-6 screen_wrapper position-relative z-index-2">
 
           <ul>
-            <li data-aos="fade-left" data-aos-offset="50">
+            <li >
               <div class="screen_icon_area">
                 <div class="screen_icon screen_icon1">
                   <i class="fas fa-arrow-down"></i>
@@ -285,7 +296,7 @@
 
             </li>
 
-            <li data-aos="fade-right" data-aos-offset="50">
+            <li   >
               <div class="screen_content">
                 <p> This is version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aen ean itudin, lorem
                   quis bibendum auctor, nisi elit cons tequat ipsum, nec sagittis sem nibh id elit.</p>
@@ -307,7 +318,7 @@
 
             </li>
 
-            <li data-aos="fade-left" data-aos-offset="50">
+            <li >
               <div class="screen_icon_area">
                 <div class="screen_icon screen_icon3">
                   <i class="far fa-smile-beam"></i>
@@ -338,16 +349,16 @@
   </section>
 
   <!-- ============= Features Section ============= -->
-  <section class="featues_wrapper">
+  <section class="featues_wrapper" data-scroll-section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
           <div class="featues_tile_area">
             <p>Our Featuers</p>
-            <h1>Top Features To Manage Storage
+            <h1  data-scroll-class="opacity_text_active" data-scroll data-scroll-speed="1"  class="opacity_text">Top Features To Manage Storage
 
             </h1>
-            <h5>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel <br> velit auctor aliquet. Aenean
+            <h5  data-scroll-class="opacity_text_active" data-scroll  data-scroll-speed="2"  class="opacity_text" data-scroll-delay=1>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel <br> velit auctor aliquet. Aenean
               sollicitudin, lorem quis.</h5>
 
           </div>
@@ -355,7 +366,7 @@
       </div>
 
       <div class="row" style='margin-top:3rem;'>
-        <div class="col-lg-4 col-md-4 col-sm-6 mt-4 text-center" data-aos="fade-right" data-aos-offset="50">
+        <div class="col-lg-4 col-md-4 col-sm-6 mt-4 text-center"  >
           <div class="features_iteam_area">
             <div class="features_icon features_iteam1">
               <i class="fas fa-cloud-upload-alt"></i>
@@ -369,7 +380,7 @@
           </div>
 
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 mt-4 text-center" data-aos="fade-up">
+        <div class="col-lg-4 col-md-4 col-sm-6 mt-4 text-center"  >
           <div class="features_iteam_area">
             <div class="features_icon features_iteam2">
               <i class="fas fa-vector-square"></i>
@@ -383,7 +394,7 @@
           </div>
 
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 mt-4 text-center" data-aos="fade-left">
+        <div class="col-lg-4 col-md-4 col-sm-6 mt-4 text-center"  >
           <div class="features_iteam_area">
             <div class="features_icon features_iteam3">
               <i class="fas fa-share"></i>
@@ -400,7 +411,7 @@
           </div>
 
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 mt-4 text-center" data-aos="fade-right">
+        <div class="col-lg-4 col-md-4 col-sm-6 mt-4 text-center"  >
           <div class="features_iteam_area">
             <div class="features_icon features_iteam4">
               <i class="fas fa-lock"></i>
@@ -414,7 +425,7 @@
           </div>
 
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 mt-4 text-center" data-aos="fade-up">
+        <div class="col-lg-4 col-md-4 col-sm-6 mt-4 text-center"  >
           <div class="features_iteam_area">
             <div class="features_icon features_iteam5">
               <i class="far fa-folder-open"></i>
@@ -428,7 +439,7 @@
           </div>
 
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 mt-4 text-center" data-aos="fade-left">
+        <div class="col-lg-4 col-md-4 col-sm-6 mt-4 text-center"  >
           <div class="features_iteam_area">
             <div class="features_icon features_iteam6">
               <i class="far fa-file-archive"></i>
@@ -449,7 +460,7 @@
   </section>
 
   <!-- ============= Video Features Section ============= -->
-  <section class="video_features_wrapper">
+  <section class="video_features_wrapper" data-scroll-section>
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -497,15 +508,15 @@
   </section>
 
   <!-- ============= Expertise Section ============= -->
-  <section class="expertise_wrapper">
+  <section class="expertise_wrapper" data-scroll-section>
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
           <div class="expertise_content_ara">
             <div class="expertise_title_area">
               <p>Expertise </p>
-              <h1>Speciality in Those Field, Get Faster Solution</h1>
-              <h5>This is of Lorem Ipsum. Proin lorem graida nibh vel.</h5>
+              <h1  data-scroll-class="opacity_text_active" data-scroll="" data-scroll-speed="1"  class="opacity_text">Speciality in Those Field, Get Faster Solution</h1>
+              <h5 data-scroll-class="opacity_text_active" data-scroll="" data-scroll-speed="2"  class="opacity_text" data-scroll-delay=1>This is of Lorem Ipsum. Proin lorem graida nibh vel.</h5>
             </div>
             <div class="expertise_video_area">
               <div class="expertise_video_thumb">
@@ -553,7 +564,8 @@
 
               <div class="expertise_graph">
                 <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" width="224" height="157" viewBox="0 0 224 157">
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="224" height="157" viewBox="0 0 224 157"
+                 >
                   <defs>
                     <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 796 556">
                       <image width="796" height="556"
@@ -573,7 +585,7 @@
 
         <div class="col-lg-7 expertie_col">
           <div class="row" style='margin-top:3rem; '>
-            <div class=" col-6" style='margin-top:2rem;' data-aos="fade-right">
+            <div class=" col-6" style='margin-top:2rem;'  >
               <div class="expertise_service_iteam">
                 <div class="expertise_icon experties_item1">
                   <i class="fas fa-sync"></i>
@@ -586,7 +598,7 @@
               </div>
 
             </div>
-            <div class="col-6" style='margin-top:2rem;' data-aos="fade-left">
+            <div class="col-6" style='margin-top:2rem;'  >
               <div class="expertise_service_iteam">
                 <div class="expertise_icon experties_item2">
                   <i class="fas fa-layer-group"></i>
@@ -599,7 +611,7 @@
               </div>
 
             </div>
-            <div class="col-6" style='margin-top:2rem;' data-aos="fade-up-right">
+            <div class="col-6" style='margin-top:2rem;'  >
               <div class="expertise_service_iteam">
                 <div class="expertise_icon experties_item3">
                   <i class="fas fa-code"></i>
@@ -612,7 +624,7 @@
               </div>
 
             </div>
-            <div class="col-6" style='margin-top:2rem;' data-aos="fade-up-left">
+            <div class="col-6" style='margin-top:2rem;'  >
               <div class="expertise_service_iteam">
                 <div class="expertise_icon experties_item4">
                   <i class="fas fa-chart-line"></i>
@@ -635,83 +647,28 @@
   </section>
 
   <!-- ============= Showcase Section ============= -->
-  <section class="showcase_wrapper">
+  <section class="showcase_wrapper" data-scroll-section>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 showcase_col order-lg-1  order-md-2 order-sm-2 order-2">
+        <div class="col-12 text-center ">
           <div class="showcase_content_ara">
-            <h1>More Easy And More Powerful And Personal App Built For You</h1>
-            <ul>
-              <li>
-                <div class="showcase_text_item_area">
-                  <div class="showcase_icon showcase_list1">
-                    <i class="fas fa-layer-group"></i>
+            <h2 data-scroll data-scroll-speed="-6" data-scroll-direction="horizontal" >Showcase your</h2>
+            <h2 data-scroll data-scroll-speed="6" data-scroll-direction="horizontal">Bussniess easily</h2>
 
-                  </div>
-                  <div class="showcase_item_text">
-                    <h1>Expert User Experience Component</h1>
-                    <p>This is version ofip Lorem Ipsum. Proin gravida nibh vel vlit auctor aliquet. Aen ean itudin,
-                      lorem quis.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="showcase_text_item_area">
-                  <div class="showcase_icon showcase_list2">
-                    <i class="fas fa-mobile-alt"></i>
-
-                  </div>
-                  <div class="showcase_item_text">
-                    <h1>Clean User Interface Design</h1>
-                    <p>This is version ofip Lorem Ipsum. Proin gravida nibh vel vlit auctor aliquet. Aen ean itudin,
-                      lorem quis.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="showcase_text_item_area">
-                  <div class="showcase_icon showcase_list3">
-                    <i class="fas fa-shield-alt"></i>
-
-                  </div>
-                  <div class="showcase_item_text">
-                    <h1>Highly Secuired System</h1>
-                    <p>This is version ofip Lorem Ipsum. Proin gravida nibh vel vlit auctor aliquet. Aen ean itudin,
-                      lorem quis.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="showcase_text_item_area">
-                  <div class="showcase_icon showcase_list4">
-                    <i class="fas fa-hdd"></i>
-
-                  </div>
-                  <div class="showcase_item_text">
-                    <h1>Unlimited Storage As Need</h1>
-                    <p>This is version ofip Lorem Ipsum. Proin gravida nibh vel vlit auctor aliquet. Aen ean itudin,
-                      lorem quis.</p>
-                  </div>
-                </div>
-              </li>
-
-            </ul>
-
+          </div>
+          <div class="showcase_img">
+            <img src="assets/Images/showcase-mobile.jpg" alt="" data-scroll data-scroll-speed="2">
           </div>
 
         </div>
-        <div class="col-lg-6 order-lg-1 order-md-1 order-sm-1 order-1">
-          <div class="showcase_mobile">
-            <img src="assets/Images/More-Power-Mobile-Screen 01.png" alt="">
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
 
 
   <!-- ============= Perfect Solution Section ============= -->
-  <section class="solution_section">
+  <section class="solution_section" data-scroll-section>
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
@@ -721,9 +678,9 @@
 
         </div>
         <div class="col-lg-7 solution_col">
-          <h4 data-aos="zoom-in">Perfect Solution For Your ios & Android Device</h4>
+          <h4 data-scroll-class="opacity_text_active" data-scroll data-scroll-speed="1"  class="opacity_text"  >Perfect Solution For Your ios & Android Device</h4>
           <div class="row solution2_row">
-            <div class=" col-6" style='margin-top:0.3rem;' data-aos="fade-right">
+            <div class=" col-6" style='margin-top:0.3rem;'  >
               <div class="solution_service_iteam">
 
                 <div class="solution_icon solution_item1">
@@ -737,7 +694,7 @@
               </div>
 
             </div>
-            <div class="col-6" style='margin-top:0.3rem;' data-aos="fade-left">
+            <div class="col-6" style='margin-top:0.3rem;'  >
               <div class="solution_service_iteam">
                 <div class="solution_icon solution_item2">
                   <i class="fas fa-layer-group"></i>
@@ -750,7 +707,7 @@
               </div>
 
             </div>
-            <div class="col-6" style='margin-top:0.3rem;' data-aos="fade-up-right">
+            <div class="col-6" style='margin-top:0.3rem;' d >
 
               <div class="solution_service_iteam">
 
@@ -765,7 +722,7 @@
               </div>
 
             </div>
-            <div class="col-6" style='margin-top:0.3rem;' data-aos="fade-up-left">
+            <div class="col-6" style='margin-top:0.3rem;'  >
               <div class="solution_service_iteam">
                 <div class="solution_icon solution_item4">
                   <i class="fas fa-chart-line"></i>
@@ -788,16 +745,16 @@
   </section>
 
   <!-- ============= Slider Section ============= -->
-  <section class="slider_wrapper">
+  <section class="slider_wrapper" data-scroll-section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
           <div class="slider_tile_area">
             <p>Applicaation Screens</p>
-            <h1>Moder And User Friendly App Screens
+            <h1 data-scroll-class="opacity_text_active" data-scroll data-scroll-speed="1"  class="opacity_text">Moder And User Friendly App Screens
 
             </h1>
-            <h5>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel <br> velit auctor aliquet. Aenean
+            <h5  data-scroll-class="opacity_text_active" data-scroll data-scroll-speed="2"  class="opacity_text" data-scroll-delay=1>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel <br> velit auctor aliquet. Aenean
               sollicitudin, lorem quis.</h5>
 
           </div>
@@ -836,7 +793,7 @@
 
 
   <!-- ============= App Background Section ============= -->
-  <section class="app_background_wrapper">
+  <section class="app_background_wrapper" data-scroll-section>
     <div class="container">
 
 
@@ -861,7 +818,7 @@
   </section>
 
   <!-- ============= Testimonial Section ============= -->
-  <section class="testimonial_wrapper">
+  <section class="testimonial_wrapper" data-scroll-section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -1003,20 +960,20 @@
 
 
   <!-- ============= Newsletter Section ============= -->
-  <section class="newsletter_wrapper">
+  <section class="newsletter_wrapper" data-scroll-section>
     <div class="container">
       <div class="row">
         <div class="col-md-5">
           <div class="newsletter_content_area">
-            <h1 data-aos="fade-right">Subscribe Our Newsletter</h1>
-            <p data-aos="fade-right" data-aos-delay="100">This is Photoshop's version of Lorem Ipsum. Proin gravida
+            <h1 >Subscribe Our Newsletter</h1>
+            <p  >This is Photoshop's version of Lorem Ipsum. Proin gravida
               nibih vel velit auctor aliquet. Aenean sollicitudin, lorem quis.This isaw Photoshop's version of Lorem
               Ipsum.</p>
           </div>
 
         </div>
         <div class="col-md-6">
-          <form action="" method="post" class="newsletter_input" data-aos="fade-left">
+          <form action="" method="post" class="newsletter_input"  >
             <div class="input-group mb-3">
               <input type="email" class="form-control" placeholder="your email....." aria-label="Recipient's Email"
                 aria-describedby="basic-addon2">
@@ -1030,8 +987,10 @@
     </div>
   </section>
 
+</div>
+
   <!-- ============= Footer Section ============= -->
-  <footer class="footer_wrapper">
+  <footer class="footer_wrapper" data-scroll-section>
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-6">
@@ -1186,11 +1145,14 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
   <!-- AOS On Page Scroll JS -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- Main JS -->
-  <script src="/assets/JS/main.js"></script>
+  <script src="assets/JS/locomotive-scroll.min.js"></script>
+
+
+    <!-- Main JS -->
+    <script src="/assets/JS/main.js"></script>
 
   <!-- Multi Level Nested Dropdown -->
   <script src="https://cdn.jsdelivr.net/gh/kmlpandey77/bootnavbar/js/bootnavbar.js"></script>
@@ -1201,6 +1163,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
     integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
     crossorigin="anonymous"></script>
+
+
+    <script>
+
+
+    </script>
 
 
 
