@@ -81,12 +81,5 @@ var swiper = new Swiper('.swiper-container2', {
 //   });
 // });
 
-     // Locomotive Animation
-     const scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
-      smooth: true,
-      repeat:true,
-
-    });
-
+  
 

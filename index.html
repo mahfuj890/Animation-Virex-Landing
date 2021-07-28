@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="shortcut icon" href="assets/Images/fiv_icon.png" type="image/x-icon">
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="style.css">
+
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,13 +28,14 @@
   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
   <!-- Locomotive CSS -->
   <link rel="stylesheet" href="assets/CSS/locomotive-scroll.min.css">
-
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div data-scroll-container>
 
-  <section class="navbar_hero_wrapper">
+  <section class="navbar_hero_wrapper" data-scroll-section>
 
 
     <!-- ============= Navbar ============= -->
@@ -1148,25 +1148,30 @@
   <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/JS/locomotive-scroll.min.js"></script>
 
-
-    <!-- Main JS -->
-    <script src="/assets/JS/main.js"></script>
 
   <!-- Multi Level Nested Dropdown -->
   <script src="https://cdn.jsdelivr.net/gh/kmlpandey77/bootnavbar/js/bootnavbar.js"></script>
   <!-- Waypoint For Counter -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
     integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
     integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
     crossorigin="anonymous"></script>
 
-
+    <script src="assets/JS/locomotive-scroll.min.js"></script>
+    <!-- Main JS -->
+    <script src="/assets/JS/main.js"></script>
     <script>
 
+   // Locomotive Animation
+   const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true,
+      repeat:true,
+
+    });
 
     </script>
 
