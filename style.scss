@@ -288,6 +288,7 @@ data-scroll="" data-scroll-speed="-6" data-scroll-direction="horizontal"
 }
 /* ============= Navbar  ============= */
 .navbar_wrapper {
+  
   position: relative;
   z-index: 10000;
 
@@ -1824,12 +1825,17 @@ data-scroll="" data-scroll-speed="-6" data-scroll-direction="horizontal"
 
 
 
-  .showcase_content_ara {
+  .showcase_content_ara  {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 100%;
+
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
     h2{
       color: $white_color;
       font-size: calc(2rem + 5vw);
